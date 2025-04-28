@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+    box-sizing: border-box;
+}
+
+:root {
+    --color-01: #ff5678;
+    --default-border: 1px solid rgb(0, 0, 0, 0.15);
+    --border-radius: 10px;
+    --box-shadow: 5px 5px rgba(0, 0, 0, 0.342);
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+}
+
+.content {
+    display: grid;
+    grid-template-areas:
+        ". . . . ."
+        ". hero . form ."
+        ". hero . form ."
+        ". . . . ."
+    ;
+    gap: 85px;
+}
+
+aside {
+    grid-area: hero;
+}
+
+main {
+    grid-area: form;
+}
+
+aside img {
+    width: 300px;
+}
+
+aside h1 {
+    font-size: 64px;
+    font-weight: 500;
+}
+
+aside h1 span {
+    color: var(--color-01);
+}
+
+main {
+    width: 600px;
+    height: 500px;
+    
+    padding: 44px 57px;
+
+    border: var(--default-border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+main a img {
+    width: 20px;
+}
+
+main h2 {
+    max-width: 430px;
+}
+
+main h2 span {
+    color: var(--color-01);
+}
+
+.superior a + h2 {
+    display: inline-block;
+}
+
+main form { 
+    text-transform: lowercase;
+
+    font-weight: 500;
+
+    margin-top: 25px;
+}
+
+main form input, main form select {
+    font-size: 20px;
+
+    margin-top: 5px;
+    margin-bottom: 15px;
+    
+    width: 485px;
+    height: 45px;
+    
+    border: var(--default-border);
+    border-radius: var(--border-radius);
+}
+
+form button img {
+    width: 20px;
+}
+
+main .cad {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+main .cad a {
+    color: white;
+
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+
+    padding: 10px 50px;
+    margin-top: 15px;
+
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.cad :hover {
+    color: rgba(0, 0, 0, 0.507);
+}
+
+.cadastro{
+    background-color: aqua;
+}

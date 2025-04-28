@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --color-01: #ff5678;
+    --default-border: 1px solid rgb(0, 0, 0, 0.15);
+    --border-radius: 10px;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+}
+
+.content {
+    display: grid;
+    grid-template-areas: 
+    "hero"
+    "form"
+    ;    
+}
+
+aside{
+    grid-area: hero;
+}
+
+main {
+    grid-area: form;
+}
+
+aside {
+    text-align: center;
+
+    font-size: 64px;
+    font-weight: 500;
+
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+aside span {
+    color: var(--color-01);
+}
+
+main {
+    width: 500px;
+    height: 300px;
+
+    padding: 44px 57px;
+    margin: auto;
+
+    border: var(--default-border);
+    border-radius: var(--border-radius);
+}
+
+main a img {
+    width: 20px;
+}
+
+main h2 span {
+    color: var(--color-01);
+}
+
+.superior a + h2 {
+    display: inline-block;
+}
+
+.inferior{
+    font-weight: 500;
+}
+
+main .inferior a{
+    color: aqua;
+
+    text-decoration: none;
+
+    border: var(--default-border);
+    border-radius: var(--border-radius);
+    border-color: aqua;
+
+    padding: 5px 30px;
+    margin: 0px 20px;
+}
+
+main .inferior a:hover {
+    background-color: aqua;
+    color: white;
+}
+
+main .inferior p {
+    margin-top: 30px;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
