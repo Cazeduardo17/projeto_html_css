@@ -3,18 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    margin: 0px;
     padding: 0px;
-    
-    box-sizing: border-box;
+    margin: 0px;
+
+    box-sizing: border-box  ;
 }
 
 :root {
     --color-01: #ff5678;
 
-    --border: 1px solid rgb(0, 0, 0, 0.15);
+    --border: solid 1px rgb(0, 0, 0, 0.15);
     --border-radius: 10px;
-    
+
     --box-shadow: 5px 5px rgba(0, 0, 0, 0.342);
 }
 
@@ -57,8 +57,8 @@ aside h1 span {
 
 main {
     width: 600px;
-    height: 500px;
-    
+    height: 500px;  
+
     padding: 44px 57px;
 
     border: var(--border);
@@ -67,71 +67,31 @@ main {
     box-shadow: var(--box-shadow);
 }
 
-main a img {
-    width: 20px;
-}
-
 main h2 {
     max-width: 430px;
-}
-
-main h2 span {
-    color: var(--color-01);
 }
 
 .superior a + h2 {
     display: inline-block;
 }
 
-main form { 
-    text-transform: lowercase;
-
-    font-weight: 500;
-
-    margin-top: 25px;
-}
-
-main form input, main form select {
-    font-size: 20px;
-
-    margin-top: 5px;
-    margin-bottom: 15px;
-    
-    width: 485px;
-    height: 45px;
-    
-    border: var(--border);
-    border-radius: var(--border-radius);
-}
-
-form button img {
+.superior a img {
     width: 20px;
 }
 
-main .cad {
-    display: flex;
-    flex-flow: column wrap;
+.superior span {
+    color: var(--color-01);
 }
 
-main .cad a {
-    color: white;
+main p {
+    font-size: 30px;
+    font-weight: 500;
+}
 
-    font-size: 20px;
+main form p {
     text-align: center;
-    text-decoration: none;
-
-    padding: 10px 50px;
-    margin-top: 15px;
-
-    border: none;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
 }
 
-.cad :hover {
-    color: rgba(0, 0, 0, 0.507);
-}
-
-.cadastro{
-    background-color: aqua;
+main form span {
+    color: var(--color-01);
 }

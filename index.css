@@ -11,9 +11,11 @@
 
 :root {
     --color-01: #ff5678;
-    --default-border: 1px solid rgb(0, 0, 0, 0.15);
+
+    --border: 1px solid rgb(0, 0, 0, 0.15);
     --border-radius: 10px;
-    --border-shadow: 5px 5px rgba(0, 0, 0, 0.342);
+
+    --box-shadow: 5px 5px rgba(0, 0, 0, 0.342);
 }
 
 body {
@@ -59,9 +61,10 @@ main {
 
     padding: 44px 57px;
 
-    border: var(--default-border);
+    border: var(--border);
     border-radius: var(--border-radius);
-    box-shadow: var(--border-shadow);
+
+    box-shadow: var(--box-shadow);
 }
 
 main h2 {
@@ -88,7 +91,8 @@ main .links a {
     
     border: none;
     border-radius: var(--border-radius);
-    box-shadow: var(--border-shadow);
+
+    box-shadow: var(--box-shadow);
 }
 
 .links :hover {
